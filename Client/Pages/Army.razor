@@ -1,0 +1,76 @@
+﻿@page "/army"
+@inject BlazingChat.Shared.IUnitService UnitService
+
+
+<h3>My Army</h3>
+@code {
+    
+    protected override async Task OnInitializedAsync()
+    {
+        //await UnitService.LoadUnitsAsync();
+        //await UnitService.LoadUserUnitsAsync();
+    }
+   
+    private async Task ReviveArmy()
+    {
+        //await UnitService.ReviveArmy();
+    }
+}
+
+@if (UnitService.Units.Count > 0)
+{    
+    var Id=1;
+    
+    <table class="table">
+    <thead>
+    <tr class="bg-danger" >
+      <th scope="col">Unit ID</th>
+      <th scope="col">Image</th>
+      <th scope="col">Title</th>
+      <th scope="col">Attack</th>
+      <th scope="col">Defense</th>
+      <th scope="col">Hit Points</th>
+    </tr>
+  </thead>
+         
+       
+        @foreach (var userUnit in UnitService.MyUnits)
+        {                       
+            <tr class="table-info" >
+            <td>
+                @Id
+            </td>
+                <td>
+                    @switch (userUnit.UnitId)
+                    {
+                        case 1:<img src="image/knight.png" />break;
+                        case 2: <img src="image/archer.png" />break;
+                        case 3: <img src="image/mage.png" />break;
+                    }
+                </td>
+                <td>
+                    @UnitService.Units.First(unit => unit.Id == userUnit.UnitId).Title
+                </td>
+                <td>
+                    @UnitService.Units.First(unit => unit.Id == userUnit.UnitId).Attack
+                </td>
+                <td>
+                    @UnitService.Units.First(unit => unit.Id == userUnit.UnitId).Defense
+                </td>
+                <td>
+                    @userUnit.HitPoints HP
+                </td>
+            </tr>
+                  Id++;
+        }
+    </table>
+    <center>
+        <button class="btn btn-warning" @onclick="ReviveArmy">Revive Your Army for 1000 Bananas</button>
+    </center>
+}
+else
+{
+    <span>Loading Units...</span>
+}
+
+

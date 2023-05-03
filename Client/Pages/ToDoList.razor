@@ -1,0 +1,59 @@
+@page "/todoList"
+@inherits ToDoListBase
+
+
+<h3> To Do List</h3>
+
+
+@if(Tasks==null)
+{
+    //<div> Loading Tasks...</div>
+
+    <LoadingIndicator/>
+}
+else
+{
+<table class="table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Priority
+</th>
+<th>
+Assignee
+</th>
+<th>
+Created Date
+</th>
+<th>
+Status
+</th>
+</tr>
+<th>
+</th>
+</thead>
+
+<tbody>
+  @foreach ( var item in Tasks)
+  {
+      <tr> 
+      <td>@item.Name</td>
+      <td>@item.Priority</td>
+      <td>@item.AssigneeName</td>
+      <td>@item.CreatedDate.ToString("dd/MM/yyy hh:mm")</td>
+        <td>@item.Status</td>
+      </tr>
+      <td>
+       <a href ="/taskDetails/@item.Id"> Detail </a>
+       </td>
+  }
+
+</tbody>
+
+
+</table>
+
+}

@@ -1,0 +1,12 @@
+E:\web\blazor\blazingchat\todolist.models\obj\Debug\net6.0\ToDoList.Models.csproj.AssemblyReference.cache
+E:\web\blazor\blazingchat\todolist.models\obj\Debug\net6.0\ToDoList.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\web\blazor\blazingchat\todolist.models\obj\Debug\net6.0\ToDoList.Models.AssemblyInfoInputs.cache
+E:\web\blazor\blazingchat\todolist.models\obj\Debug\net6.0\ToDoList.Models.AssemblyInfo.cs
+E:\web\blazor\blazingchat\todolist.models\obj\Debug\net6.0\ToDoList.Models.csproj.CoreCompileInputs.cache
+E:\web\blazor\blazingchat\ToDoList.Models\bin\Debug\net6.0\ToDoList.Models.deps.json
+E:\web\blazor\blazingchat\ToDoList.Models\bin\Debug\net6.0\ToDoList.Models.dll
+E:\web\blazor\blazingchat\ToDoList.Models\bin\Debug\net6.0\ToDoList.Models.pdb
+E:\web\blazor\blazingchat\ToDoList.Models\obj\Debug\net6.0\ToDoList.Models.dll
+E:\web\blazor\blazingchat\ToDoList.Models\obj\Debug\net6.0\refint\ToDoList.Models.dll
+E:\web\blazor\blazingchat\ToDoList.Models\obj\Debug\net6.0\ToDoList.Models.pdb
+E:\web\blazor\blazingchat\ToDoList.Models\obj\Debug\net6.0\ref\ToDoList.Models.dll

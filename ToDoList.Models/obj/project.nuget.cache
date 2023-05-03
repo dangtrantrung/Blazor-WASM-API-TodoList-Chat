@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "fG/rHbiURtVsKlNTL5/QKeaqCs+OoT+P1Uvi/AHc2MwVXglfLgK7LOkk/bSgY/d5W1IyIrr/JWCVnjQdlriM8A==",
+  "success": true,
+  "projectFilePath": "E:\\web\\blazor\\blazingchat\\ToDoList.Models\\ToDoList.Models.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://packages.nuget.org/v1/FeedService.svc/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}

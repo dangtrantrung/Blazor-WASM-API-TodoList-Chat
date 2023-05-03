@@ -1,0 +1,12 @@
+E:\web\blazor\blazingchat\Shared\bin\release\net6.0\blazingchat.Shared.deps.json
+E:\web\blazor\blazingchat\Shared\bin\release\net6.0\blazingchat.Shared.dll
+E:\web\blazor\blazingchat\Shared\bin\release\net6.0\blazingchat.Shared.pdb
+E:\web\blazor\blazingchat\Shared\obj\release\net6.0\blazingchat.Shared.csproj.AssemblyReference.cache
+E:\web\blazor\blazingchat\Shared\obj\release\net6.0\blazingchat.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\web\blazor\blazingchat\Shared\obj\release\net6.0\blazingchat.Shared.AssemblyInfoInputs.cache
+E:\web\blazor\blazingchat\Shared\obj\release\net6.0\blazingchat.Shared.AssemblyInfo.cs
+E:\web\blazor\blazingchat\Shared\obj\release\net6.0\blazingchat.Shared.csproj.CoreCompileInputs.cache
+E:\web\blazor\blazingchat\Shared\obj\release\net6.0\blazingchat.Shared.dll
+E:\web\blazor\blazingchat\Shared\obj\release\net6.0\refint\blazingchat.Shared.dll
+E:\web\blazor\blazingchat\Shared\obj\release\net6.0\blazingchat.Shared.pdb
+E:\web\blazor\blazingchat\Shared\obj\release\net6.0\ref\blazingchat.Shared.dll

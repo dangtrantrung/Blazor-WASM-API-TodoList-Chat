@@ -1,0 +1,49 @@
+@page "/build"
+
+@inject BlazingChat.Shared.IBananaService BananaService
+@inject BlazingChat.Shared.IUnitService UnitService
+@inject IToastService ToastService 
+
+<h3> Build Army </h3>
+<div class="form-group">
+  <select @bind="selectedUnitId" class="form-control">
+    @foreach( var unit in UnitService.Units)
+    { 
+        
+           <option value ="@unit.Id"> @unit.Title // @unit.BananaCost Bananas </option>
+       
+    }
+    </select>
+</div>
+<button class="btn btn-primary" @onclick="BuildUnit"> Build Unit </button>
+@if(needMoreBananas)
+{
+ <div class="validation-message">
+ Not enough Bananas! :(
+ </div>
+}
+@code{
+    
+    int selectedUnitId=1;
+    bool needMoreBananas=false;
+
+    /* private void EatBananas (int amount)
+    {
+       // Console.WriteLine($"{amount} bananas eaten.");
+       BananaService.EatBananas(amount);
+    } */
+    public void BuildUnit()
+    {
+        var selectedUnit=UnitService.Units.FirstOrDefault(unit=>unit.Id==selectedUnitId);
+ 
+        if(BananaService.Bananas<selectedUnit.BananaCost)
+        {
+            needMoreBananas=true;
+            ToastService.ShowError("Not enough Bananas! :(");
+            return;
+        }
+        needMoreBananas=false;
+        BananaService.EatBananas(selectedUnit.BananaCost);
+        UnitService.AddUnit(selectedUnitId);
+    }
+}

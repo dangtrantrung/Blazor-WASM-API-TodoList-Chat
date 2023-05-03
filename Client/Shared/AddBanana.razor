@@ -1,0 +1,13 @@
+@inject BlazingChat.Shared.IBananaService BananaService
+<button @onclick ="IncreaseBananaCount" class="btn btn-info">   
+ <strong> + </strong>
+</button>
+
+
+@code{
+         
+         public void IncreaseBananaCount ()
+         {
+            BananaService.AddBananas(10);
+         }
+}

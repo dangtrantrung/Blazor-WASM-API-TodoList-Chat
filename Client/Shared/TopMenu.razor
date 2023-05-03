@@ -1,0 +1,22 @@
+@inject BlazingChat.Shared.IBananaService BananaService
+@implements IDisposable
+
+<div class="top-menu">
+<img src="image/banana.png"> 
+<span class="popover-header"> @BananaService.Bananas   </span>
+   <AddBanana/>
+</div>
+
+@code{
+   
+    protected override void OnInitialized()
+    {
+        BananaService.Onchanged+=StateHasChanged;
+    }
+    
+     public void Dispose()
+     {
+          BananaService.Onchanged-=StateHasChanged;
+     }
+     
+}

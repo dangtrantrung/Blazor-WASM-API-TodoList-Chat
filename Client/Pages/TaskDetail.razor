@@ -1,0 +1,53 @@
+@page "/taskDetails/{TaskId}"
+@inherits TaskDetailBase
+
+@if(TaskIdDetail==null)
+{
+    <LoadingIndicator/>
+}
+else
+{
+<h3> Task: @TaskIdDetail.Name </h3>
+<table class="table">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Priority
+</th>
+<th>
+Assignee
+</th>
+<th>
+Created Date
+</th>
+<th>
+Status
+</th>
+</tr>
+</thead>
+
+<tbody>
+  
+      <tr> 
+      <td>@TaskIdDetail.Name</td>
+      <td>@TaskIdDetail.Priority</td>
+      <td>@TaskIdDetail.AssigneeName</td>
+      <td>@TaskIdDetail.CreatedDate.ToString("dd/MM/yyy hh:mm")</td>
+        <td>@TaskIdDetail.Status</td>
+      </tr>
+      <td>
+       <a href ="/taskEdit/@TaskIdDetail.Id"> Edit </a>||
+         <a href ="/taskDelete/@TaskIdDetail.Id"> Delete</a>
+       </td>
+  
+
+</tbody>
+
+
+</table>
+}
+
+
