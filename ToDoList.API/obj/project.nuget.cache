@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GsOdFjqouR4Z18KpiRQi0AZ3Zlw2Aank+gKA/lrr2Ij3BOPxqeCTUATRSAQTTP7ke9T6AGBjZnExuktj/WvEPg==",
+  "dgSpecHash": "2JfeBboWmkSysrdyJFpennxDzQISZpF+4dseQoW3zNyC+4DMI6o434HW5VUpJNPO6Fml+qPi8EoSycVsv3IHFA==",
   "success": true,
-  "projectFilePath": "E:\\web\\blazor\\blazingchat\\todolist.api\\ToDoList.API.csproj",
+  "projectFilePath": "E:\\web\\blazor\\blazingchat\\ToDoList.API\\ToDoList.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DTTRUNG\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\DTTRUNG\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.9\\microsoft.aspnetcore.cryptography.internal.6.0.9.nupkg.sha512",

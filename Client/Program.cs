@@ -17,6 +17,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 // add Uri to connect to the Todolist.API
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7283") });
 builder.Services.AddTransient<ITaskAPIClient,TaskAPIClient>();
+builder.Services.AddTransient<IAssigneeAPIClient,AssigneeAPIClient>();
 
 
 builder.Services.AddScoped<IBananaService,BananaService>();

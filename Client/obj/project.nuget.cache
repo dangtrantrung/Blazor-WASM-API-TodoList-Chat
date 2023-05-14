@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r3ZobDoHRtQeBcpo0Cc7nFMY34GpEOhZtseFis7R5w5nGat2PpvOuuR0THKrU+I90v35E0UIFB3sC5MAoEIgWA==",
+  "dgSpecHash": "/f8WI7ta3jyG4JcSD2n53rY70SZSW6jFnai9OUHOz/r0kqpFJP3bCLyU/acgJ04h4wfCN3B9BV4QbjJeJTJlXg==",
   "success": true,
-  "projectFilePath": "E:\\web\\blazor\\blazingchat\\Client\\blazingchat.Client.csproj",
+  "projectFilePath": "E:\\web\\blazor\\blazingchat\\client\\blazingchat.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DTTRUNG\\.nuget\\packages\\blazored.toast\\4.1.0\\blazored.toast.4.1.0.nupkg.sha512",
     "C:\\Users\\DTTRUNG\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.12\\microsoft.aspnetcore.authorization.6.0.12.nupkg.sha512",

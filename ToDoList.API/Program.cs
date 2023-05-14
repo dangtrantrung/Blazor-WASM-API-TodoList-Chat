@@ -53,6 +53,7 @@ host.MigrateDbContext<ToDoListDbContext>((context,services)=>
  host.Run(); */
 
  builder.Services.AddTransient<ITaskRepository,TaskRepository>();
+ builder.Services.AddTransient<IUserRepository,UserRepository>();
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())

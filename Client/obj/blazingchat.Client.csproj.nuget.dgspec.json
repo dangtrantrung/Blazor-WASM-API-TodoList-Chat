@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\web\\blazor\\blazingchat\\Client\\blazingchat.Client.csproj": {}
+    "E:\\web\\blazor\\blazingchat\\client\\blazingchat.Client.csproj": {}
   },
   "projects": {
-    "E:\\web\\blazor\\blazingchat\\Client\\blazingchat.Client.csproj": {
+    "E:\\web\\blazor\\blazingchat\\client\\blazingchat.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\web\\blazor\\blazingchat\\Client\\blazingchat.Client.csproj",
+        "projectUniqueName": "E:\\web\\blazor\\blazingchat\\client\\blazingchat.Client.csproj",
         "projectName": "blazingchat.Client",
-        "projectPath": "E:\\web\\blazor\\blazingchat\\Client\\blazingchat.Client.csproj",
+        "projectPath": "E:\\web\\blazor\\blazingchat\\client\\blazingchat.Client.csproj",
         "packagesPath": "C:\\Users\\DTTRUNG\\.nuget\\packages\\",
-        "outputPath": "E:\\web\\blazor\\blazingchat\\Client\\obj\\",
+        "outputPath": "E:\\web\\blazor\\blazingchat\\client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DTTRUNG\\AppData\\Roaming\\NuGet\\NuGet.Config"

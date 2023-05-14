@@ -863,5 +863,5 @@ E:\web\blazor\blazingchat\client\bin\Debug\net6.0\ToDoList.Models.dll
 E:\web\blazor\blazingchat\client\bin\Debug\net6.0\ToDoList.Models.pdb
 E:\web\blazor\blazingchat\client\obj\Debug\net6.0\build-gz\Sadod7tw.gz
 E:\web\blazor\blazingchat\client\obj\Debug\net6.0\build-gz\P07HT8AE.gz
-E:\web\blazor\blazingchat\Client\obj\Debug\net6.0\build-gz\JpYGJXLJ.gz
-E:\web\blazor\blazingchat\Client\obj\Debug\net6.0\build-gz\ECBU+pV5.gz
+E:\web\blazor\blazingchat\client\obj\Debug\net6.0\build-gz\G+n17OTU.gz
+E:\web\blazor\blazingchat\client\obj\Debug\net6.0\build-gz\d0qJfDE9.gz

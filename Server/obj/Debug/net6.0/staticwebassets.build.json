@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xnQgHGQoJIflBxlUvj1tRFGblK4SnJ8lbpkiHNrs3Ek=",
+  "Hash": "vKRuOvKE/dBH9zIKJ/TZtZCySdtD5OtbeJuMEHLDNAU=",
   "Source": "blazingchat.Server",
   "BasePath": "_content/blazingchat.Server",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "blazingchat.Client",
       "GetPublishAssetsTargets": "ComputeFilesToPublish;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true",
+      "AdditionalPublishProperties": "BuildProjectReferences=false;ResolveAssemblyReferencesFindRelatedSatellites=true;_PublishingBlazorWasmProject=true;Configuration=Debug;Platform=AnyCPU",
       "AdditionalPublishPropertiesToRemove": "NoBuild;RuntimeIdentifier;WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
@@ -23,10 +23,10 @@
       "Source": "ToDoList.API",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;Configuration;Platform;TargetFramework;RuntimeIdentifier",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
       "AdditionalBuildProperties": "",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;Configuration;Platform;TargetFramework;RuntimeIdentifier"
     }
   ],
   "DiscoveryPatterns": [
@@ -9662,10 +9662,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "E:\\web\\blazor\\blazingchat\\server\\obj\\Debug\\net6.0\\scopedcss\\bundle\\blazingchat.Server.styles.css",
+      "Identity": "E:\\web\\blazor\\blazingchat\\Server\\obj\\Debug\\net6.0\\scopedcss\\bundle\\blazingchat.Server.styles.css",
       "SourceId": "blazingchat.Server",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\web\\blazor\\blazingchat\\server\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "E:\\web\\blazor\\blazingchat\\Server\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/blazingchat.Server",
       "RelativePath": "blazingchat.Server.styles.css",
       "AssetKind": "All",
@@ -9676,7 +9676,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\web\\blazor\\blazingchat\\server\\obj\\Debug\\net6.0\\scopedcss\\bundle\\blazingchat.Server.styles.css"
+      "OriginalItemSpec": "E:\\web\\blazor\\blazingchat\\Server\\obj\\Debug\\net6.0\\scopedcss\\bundle\\blazingchat.Server.styles.css"
     }
   ]
 }

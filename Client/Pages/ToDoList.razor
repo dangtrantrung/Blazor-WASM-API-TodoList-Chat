@@ -5,7 +5,7 @@
 <h3> To Do List</h3>
 
 
-@if(Tasks==null)
+@if(Tasks==null || Assginees ==null)
 {
     //<div> Loading Tasks...</div>
 
@@ -13,6 +13,40 @@
 }
 else
 {
+  <div class ="row">
+    <EditForm Model="@TaskListSearch">
+     <div class ="row">
+       <div class ="col">
+        <label> Name </label>
+        <InputText  class="form-control" @bind-Value="TaskListSearch.Name"> </InputText>
+       </div>
+       <div class ="col">
+        <label> Assignee </label>
+        <InputSelect  class="form-control" @bind-Value="TaskListSearch.AssigneeId"> 
+        @foreach ( var assignee in Assginees)
+        {
+                <option value ="@assignee.Id">@assignee.FullName </option>
+        }
+        </InputSelect>
+       </div>
+       <div class ="col">
+        <label> Priority</label>
+        <InputSelect  class="form-control" @bind-Value="TaskListSearch.Priority"> 
+       @foreach ( string item in Priorities)
+        {
+                <option value ="@item">@item </option>
+        }
+       </InputSelect>
+       </div>
+       
+       <div class ="col pt-4">
+        <button type ="submit" class ="btn btn-success"> Search</button>
+       </div>
+        </div>
+    </EditForm>
+  </div>
+  <div class ="row mt-4">
+  
 <table class="table">
 <thead>
 <tr>
@@ -55,5 +89,5 @@ Status
 
 
 </table>
-
+</div>
 }
