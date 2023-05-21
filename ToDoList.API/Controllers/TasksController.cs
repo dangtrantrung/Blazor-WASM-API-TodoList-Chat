@@ -15,12 +15,22 @@ public class TasksController : ControllerBase
           _taskRepository=taskRepository;
     }
     //Viết API Get ALl Tasks
-    //api/tasks/
+    //api/tasks?name=...
     [HttpGet]
-    public async Task<IActionResult>  GetAll()
+    public async Task<IActionResult>  GetAll([FromQuery] TaskListSearch taskListSearch)
     {
-        var tasks= await _taskRepository.GetTaskList();
-        return Ok(tasks);
+        var tasks= await _taskRepository.GetTaskList(taskListSearch);
+        var taskDtos=tasks.Select(x=>new TaskDto()
+           { 
+              Status=x.Status,
+              Name=x.Name,
+              AssigneeId=x.AssigneeId,
+              CreatedDate=x.CreatedDate,
+              Priority=x.Priority,
+              Id=x.Id,
+              AssigneeName=x.Assignee!=null? x.Assignee.FirstName + ' '+ x.Assignee.LastName:"N/A"
+           });
+        return Ok(taskDtos);
     }
     [HttpPost]
     public async Task<IActionResult>  Create([FromBody] TaskCreateRequest request)

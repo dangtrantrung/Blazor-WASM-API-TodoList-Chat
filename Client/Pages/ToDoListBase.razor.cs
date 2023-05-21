@@ -21,16 +21,18 @@ public class ToDoListBase: ComponentBase
         
         protected override async Task OnInitializedAsync ()
         {
-            Tasks= await _taskAPIClient.GetTaskList();
+            Tasks= await _taskAPIClient.GetTaskList(TaskListSearch);
             Assginees= await _assgineeAPIClient.GetAssignees();
             Priorities=Enum.GetNames(typeof(Priority));
 
         }
-    }
-        public class TaskListSearch 
+
+        protected async Task SearchForm()
         {
-            public string Name {get;set;}
-            public Guid AssigneeId {get;set;}
-            public Priority Priority {get;set;}
+            //var name =TaskListSearch.Name;
+            Tasks= await _taskAPIClient.GetTaskList(TaskListSearch);
+
         }
+    }
+        
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\web\\blazor\\blazingchat\\ToDoList.API\\ToDoList.API.csproj": {}
+    "E:\\web\\blazor\\blazingchat\\todolist.api\\ToDoList.API.csproj": {}
   },
   "projects": {
-    "E:\\web\\blazor\\blazingchat\\ToDoList.API\\ToDoList.API.csproj": {
+    "E:\\web\\blazor\\blazingchat\\todolist.api\\ToDoList.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\web\\blazor\\blazingchat\\ToDoList.API\\ToDoList.API.csproj",
+        "projectUniqueName": "E:\\web\\blazor\\blazingchat\\todolist.api\\ToDoList.API.csproj",
         "projectName": "ToDoList.API",
-        "projectPath": "E:\\web\\blazor\\blazingchat\\ToDoList.API\\ToDoList.API.csproj",
+        "projectPath": "E:\\web\\blazor\\blazingchat\\todolist.api\\ToDoList.API.csproj",
         "packagesPath": "C:\\Users\\DTTRUNG\\.nuget\\packages\\",
-        "outputPath": "E:\\web\\blazor\\blazingchat\\ToDoList.API\\obj\\",
+        "outputPath": "E:\\web\\blazor\\blazingchat\\todolist.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DTTRUNG\\AppData\\Roaming\\NuGet\\NuGet.Config"

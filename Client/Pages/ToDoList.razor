@@ -14,7 +14,7 @@
 else
 {
   <div class ="row">
-    <EditForm Model="@TaskListSearch">
+    <EditForm Model="@TaskListSearch" OnSubmit=@SearchForm>
      <div class ="row">
        <div class ="col">
         <label> Name </label>
@@ -22,7 +22,9 @@ else
        </div>
        <div class ="col">
         <label> Assignee </label>
+        
         <InputSelect  class="form-control" @bind-Value="TaskListSearch.AssigneeId"> 
+         <option> Select an Assignee</option>
         @foreach ( var assignee in Assginees)
         {
                 <option value ="@assignee.Id">@assignee.FullName </option>
@@ -32,6 +34,7 @@ else
        <div class ="col">
         <label> Priority</label>
         <InputSelect  class="form-control" @bind-Value="TaskListSearch.Priority"> 
+        <option> Select an Priority</option>
        @foreach ( string item in Priorities)
         {
                 <option value ="@item">@item </option>

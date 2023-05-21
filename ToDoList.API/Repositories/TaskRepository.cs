@@ -16,21 +16,23 @@ namespace ToDoList.API.Repositories
             _context=context;
         }
 
-        public async Task<IEnumerable<TaskDto>> GetTaskList()
+        public async Task<IEnumerable<Entities.Task>> GetTaskList(TaskListSearch taskListSearch)
         {
-           return await _context.Tasks.Include(x=>x.Assignee)
-           .Select(x=>new TaskDto()
-           {
-              Status=x.Status,
-              Name=x.Name,
-              AssigneeId=x.AssigneeId,
-              CreatedDate=x.CreatedDate,
-              Priority=x.Priority,
-              Id=x.Id,
-              AssigneeName=x.Assignee!=null? x.Assignee.FirstName + ' '+ x.Assignee.LastName:"N/A"
-           })
-
-           .ToListAsync();
+            var query = _context.Tasks
+                                 .Include(x=>x.Assignee).AsQueryable();
+            if(!string.IsNullOrEmpty(taskListSearch.Name))
+               {
+                  query=query.Where(x=>x.Name.Contains(taskListSearch.Name));
+               }
+            if(taskListSearch.AssigneeId.HasValue)
+               {
+                  query=query.Where(x=>x.AssigneeId.Value== taskListSearch.AssigneeId.Value);
+               }
+            if(taskListSearch.Priority.HasValue)
+               {
+                  query=query.Where(x=>x.Priority== taskListSearch.Priority);
+               }
+            return await query.ToListAsync();
         }
         public async Task<Task> Create(Task task)
         {

@@ -2391,11 +2391,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\web\\blazor\\blazingchat\\client\\blazingchat.Client.csproj",
+      "projectUniqueName": "E:\\web\\blazor\\blazingchat\\Client\\blazingchat.Client.csproj",
       "projectName": "blazingchat.Client",
-      "projectPath": "E:\\web\\blazor\\blazingchat\\client\\blazingchat.Client.csproj",
+      "projectPath": "E:\\web\\blazor\\blazingchat\\Client\\blazingchat.Client.csproj",
       "packagesPath": "C:\\Users\\DTTRUNG\\.nuget\\packages\\",
-      "outputPath": "E:\\web\\blazor\\blazingchat\\client\\obj\\",
+      "outputPath": "E:\\web\\blazor\\blazingchat\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DTTRUNG\\AppData\\Roaming\\NuGet\\NuGet.Config"
