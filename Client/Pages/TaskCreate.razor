@@ -1,0 +1,27 @@
+@page "/taskCreate"
+@inherits TaskCreateBase
+
+<h3> Create An New Task </h3>
+
+<EditForm Model="Task">
+  <div class="mb-3">
+    <label for="Name" class="form-label">Name</label>
+    <InputText class="form-control" @bind-Value="Task.Name"></InputText>
+    <small id="nameHelp" class="form-text text-muted">Please enter Task FullName.</small>
+  </div>
+  <div class="mb-3">
+    <label for="Priority" class="form-label">Priority</label>
+    <InputSelect  class="form-control" @bind-Value="Task.Priority"> 
+       @foreach (string item in Priorities)
+        {
+                <option value ="@item">@item </option>
+        }
+       </InputSelect>
+    <small id="priorityHelp" class="form-text text-muted">Please choose an priority which you want.</small>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
+
+
+

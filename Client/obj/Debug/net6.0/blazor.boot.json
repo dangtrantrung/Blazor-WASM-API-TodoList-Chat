@@ -206,16 +206,16 @@
       "netstandard.dll": "sha256-+SGdnDhVMiZ9hq0EsYwJ+mcK0odf3bAtXnSKLorGDCs=",
       "System.Private.CoreLib.dll": "sha256-mqfalNg3wC8XHlyA+j5ioNcnc0kt4prNudKdyJoaYaU=",
       "blazingchat.Shared.dll": "sha256-sIAJgXaa4XZX\/U8E00BN6cXwJ8qbBeOAEFOHM7rTK7U=",
-      "ToDoList.Models.dll": "sha256-1kqBYzSgweGjD3nZ01Cq\/j135TC9Q0QDvF5NO6eNVC0=",
-      "blazingchat.Client.dll": "sha256-hwHyKALTq4UBj54m\/Cx3q+\/QWvwfPIkDKhgCI6iUwQA="
+      "ToDoList.Models.dll": "sha256-OlgEZsOHuziNg+OqFlVzx+Q9fsMOkNR\/r8WYo30FWec=",
+      "blazingchat.Client.dll": "sha256-krkCFqbLUFchrr3QYslfqp56bKWaRJuTdXzYFuZwods="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "blazingchat.Shared.pdb": "sha256-ak+JD7RLEf22I4TPGabpjPyjnyuoiH1ih6xvxjJGf2k=",
-      "ToDoList.Models.pdb": "sha256-d8v3ID+uAF0rexq201++Max7x75dki1bzk\/45\/SQ64k=",
-      "blazingchat.Client.pdb": "sha256-11+g8benpt8gSbdzwlcXPoKl5XAfbZNZP\/Hd1OmQz2M="
+      "ToDoList.Models.pdb": "sha256-0EQ2EKsRkxRKyN0QtEaFs8B78KCpFTpMrDHdUm49f2Y=",
+      "blazingchat.Client.pdb": "sha256-lm809vsN8Ajz6MF3cs0d8UGMT59ub84xBDG2LNWPE34="
     },
     "runtime": {
       "dotnet.6.0.9.vnyjn8umrn.js": "sha256-Azk5sbYFVo84h8NpIst9roIPGLH2y8ewQ9SY\/sUHvgs=",

@@ -16804,6 +16804,11 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "e:\\web\\blazor\\blazingchat\\Client\\Pages\\TaskCreate.razor",
+      "TargetPath": "Pages\\TaskCreate.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "e:\\web\\blazor\\blazingchat\\Client\\Shared\\AddBanana.razor",
       "TargetPath": "Shared\\AddBanana.razor",
       "FileKind": "component"
